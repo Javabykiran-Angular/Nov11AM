@@ -1,0 +1,15 @@
+
+h2{
+    color: skyblue;
+}
+
+#username{
+    background-color: rgb(175, 129, 129);
+}
+
+.mydiv{
+    width: 300px;
+    height: 200px;
+    background-color:#e4f7eb;
+    color: #1c7e41;
+}
