@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="localhost:8080/emp/addemp" method="post">
+        <label for="">UserName&nbsp;:: &nbsp;&nbsp;</label> 
+        <input type="text" placeholder="Enter the Username..." name="username"> <br><br>
+        <label for="">Password&nbsp;:: &nbsp;&nbsp;</label>  <input type="password" placeholder="Enter the Password" name="password"><br><br>
+        <label for="">Email Id&nbsp;:: &nbsp;&nbsp;</label>  <input type="email" placeholder="Enter the Email Id" name="email" required><br><br>
+        <label for="">Phone No&nbsp;:: &nbsp;&nbsp;</label>  <input type="tel" placeholder="Enter the Mobile No" name="mobile" ><br><br>
+        <label for="">ID&nbsp;:: &nbsp;&nbsp;</label>  <input type="number" placeholder="Enter the number" name="num" ><br><br>
+        <label for="">Gender&nbsp;:: &nbsp;&nbsp;</label>  <input type="radio"  name="gender" value="male">MALE 
+        <input type="radio"  name="gender" value="female">FEMALE<br><br>
+        <label for="">Technology&nbsp;:: &nbsp;&nbsp;</label>  <input type="checkbox"  name="technology" value="corejava" >Core java &nbsp;&nbsp;
+        <input type="checkbox"  name="technology" value="advjava" >Advanced Java&nbsp;&nbsp;
+        <input type="checkbox"  name="technology" value="springboot" >Spring Boot&nbsp;&nbsp;
+        <input type="checkbox"  name="technology" value="angular" >Angular 8&nbsp;&nbsp; <br><br>
+        <label for=""> Qualification&nbsp;:: &nbsp;&nbsp;</label> 
+        <select name="qualification" >
+            <option value="10">10th</option>
+            <option value="12">12th</option>
+            <option value="be/btech">B.E./B.TECH</option>
+            <option value="me/mtech">M.E./M.TECH</option>
+        </select><br><br>
+
+        <!-- <button>Submit</button> -->
+        <input type="submit" value="SUBMIT">
+
+
+    </form>
+
+</body>
+</html>
