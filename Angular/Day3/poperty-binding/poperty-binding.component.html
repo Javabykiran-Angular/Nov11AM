@@ -1,0 +1,19 @@
+<p>poperty-binding works!</p>
+
+<!-- property Binding has Syntax [] that is applicable only for Html attributes or your custom tag attributes -->
+
+<img [src]="imgUrl" alt=""><br><br>
+
+<input type="text" [value]="name">
+<hr>
+<div hidden>
+    Display Data in Div Tag using Normal Html
+</div>
+<h2> Apply String interpolation for hidden attributes </h2>
+ <div hidden=" {{ishidden}} ">
+    Display Data in Div Tag using String Interpolation
+ </div>
+ <h2> Apply Property Binding for hidden attributes </h2>
+<div [hidden]="ishidden">
+    Display Data in Div Tag using Property Binding
+</div>
