@@ -1,0 +1,26 @@
+
+.success{
+    /* color: green; */
+    color:#0e71eb ;
+    font-style: italic;
+    font-weight: bold;
+}
+.danger{
+    color: red;
+    font-weight: bold;
+}
+.warning{
+    color: yellowgreen;
+    font-weight: bolder;
+}
+.special{
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.on{
+    color: tomato;
+}
+.off{
+    color: blueviolet;
+}

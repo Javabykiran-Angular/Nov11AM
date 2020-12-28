@@ -1,0 +1,19 @@
+<p>style-binding works!</p>
+
+<!-- we can use [style.color]="Propr_name" -->
+
+<h2 [style.color]="colorname" > Style Binding </h2>
+
+<div [style.color]="rating<4?colorname:colorname1">
+            Apply Style Binding On condition
+</div>
+
+<!-- If u apply Multiple Properties u can use ngStyle directive -->
+<!-- its attribute directive -->
+
+<hr>
+<h2> Apply ngStyle Using Style Binding</h2>
+
+<h2 [ngStyle]="myobj"> Hi Welcome </h2>
+<h3 [ngStyle]="myobj">Hopes So U are Enjoying My Lecture!!!</h3>
+

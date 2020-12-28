@@ -1,0 +1,20 @@
+<p>class-binding works!</p>
+
+<!-- class binding 
+1 [class.class_name]="condition"
+2 [class]="property_name" -->
+
+<div [class]="myclass">
+      Apply  Class Binding 
+</div> <br><br>
+
+<h2 [class.on]="rating<4"> Apply Class Binding Using Condition  </h2>
+<hr>
+<h2 [class.on]="rating1<4" [class.off]="rating1>4"> Apply Class Binding Using Condition </h2>
+
+<!-- if we apply multiple classes then we have to use ngClass directive  -->
+
+<hr>
+<div [ngClass]="myobj" >
+    Apply Multiple Classes using ngClass Directive
+</div>
