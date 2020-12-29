@@ -1,0 +1,35 @@
+<p>event-binding works!</p>
+
+<!-- syntax of event binding is (event_name/custom_event)="call_Method()" -->
+
+<button (click)="onClick()">Click Me</button>
+<br><br>
+<button (click)="onClick1()">Click</button> &nbsp; {{name}}
+<br><br>
+
+<button (click)="onClick2()">Click</button> <br>
+<input type="text" [value]="name1">
+<br><br>
+
+
+<button (click)="onClickDetails('Hi',23)">Details Of Event Binding</button> {{str1}} {{num1}}
+<br><br>
+
+<button (click)="result=4+4">Addition</button>&nbsp; {{result}}<br><br>
+
+<button (click)="result1=num2+num3">Addition</button>
+<br>
+<input type="text" placeholder="Result is..." [value]="result1"> <br><br>
+
+<button (click)="OnDisplay()">Display data </button> <br>
+<div [hidden]="ishidden">
+    {{name2}}
+</div>
+
+<!-- $event= is a special type of variable given by angular, it gives current dom element information -->
+<br><br>
+<button (click)="onInfo($event)" value="Event Occur!!">Doller Event Info</button>
+
+
+
+
