@@ -1,0 +1,35 @@
+<p>event-binding-part2 works!</p>
+<!-- template ref variable -->
+<!-- syntax #template_name -->
+<input #myinput type="text" placeholder="Enter the name..." ><br><br>
+<button (click)="onClick(myinput.value)"> Click </button> <br><br>
+
+<input #myinput1 type="text" placeholder="Enter the Name...."> <br>
+<button (click)="onClick1(myinput1)">Click</button> <hr>
+
+<input #myinput3 type="number" placeholder="Enter the Number.." ><br>
+<input type="radio" (click)="onSquare(myinput3.value)" >Square
+<br>
+<input type="text" [value]="result" ><br>
+<input type="text" [value]="result1" >
+<hr><hr>
+
+<input #myinput4 type="text" placeholder="Enter the Name..." (change)="onChange(myinput4)" >
+<hr>
+
+<input type="text" placeholder="Enter the Name.." (keyup)="onKeyUp()">
+
+<hr>
+
+<input type="text" placeholder="Enter the Name.." (keydown)="onKeyDown()">
+
+<!-- mouseover,mouseout -->
+<hr>
+<button (click)="onAlert()">Alert Display</button>
+<hr>
+<!-- two way binding syntax [()]= banana in the box, we have to use one directive ngModel given by angular -->
+
+<input type="text" placeholder="Enter the Username.."
+[(ngModel)]="name"
+>
+{{name}}
