@@ -1,0 +1,54 @@
+<p>fordirective works!</p>
+
+<ul>
+    <li *ngFor="let item of course"> {{item}} </li>
+</ul>
+<hr>
+<table border="2px">
+    <thead>
+        <th>Sr No</th>
+        <th>Product Name</th>
+        <th>Description</th>
+        <th>Quantity</th>
+        <th>Price</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of product;index as i">
+            <td> {{i+1}} </td>
+            <td> {{item.name}} </td>
+            <td> {{item.description}} </td>
+            <td> {{item.quantity}} </td>
+            <td> {{item.price}} </td>
+
+        </tr>
+    </tbody>
+</table>
+<hr>
+<table border="2px">
+    <thead>
+        <th>Sr No</th>
+        <th>Product Name</th>
+        <th>Description</th>
+        <th>Quantity</th>
+        <th>Price</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of product;index as i" (mouseover)="onMouseOver(item)"
+        [ngClass]="{ 
+            'highlight':item.name==selected
+        }" 
+        (mouseout)="onMouseOut()"
+        >
+            <td> {{i+1}} </td>
+            <td> {{item.name}} </td>
+            <td> {{item.description}} </td>
+            <td> {{item.quantity}} </td>
+            <td> {{item.price}} </td>
+
+        </tr>
+    </tbody>
+</table>
+
+
+
+

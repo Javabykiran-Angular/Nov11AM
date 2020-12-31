@@ -1,0 +1,32 @@
+<p>ifdirective works!</p>
+<!-- what is mean/use by structural Directive
+If u want modify,update,delete or to manipulate dom structure
+1 if Directive 2 for directive 3 switch directive  -->
+
+<div *ngIf="rating<4">
+        Condition is true
+</div>
+<br><br>
+
+<div *ngIf="rating1<4;else myelsepart">
+    Condition is  <b>true</b>  using If-else
+</div>
+<!-- <div #elsepart >
+    Condition is <b>false </b> using If-else
+</div> -->
+<ng-template #myelsepart>
+    Condition is <b>false </b> using If-else
+</ng-template>
+<hr>
+<h2>Apply ngIf using in Standard Way</h2>
+
+<div *ngIf="rating2<4;then mainpart else elsepart1">
+    
+</div>
+<ng-template #mainpart>
+        <input type="text" placeholder="Enter the Username..">
+</ng-template>
+
+<ng-template #elsepart1>
+    <button>Condition is false</button>
+</ng-template>
