@@ -1,0 +1,14 @@
+<p>parent works!</p>
+
+<h2> {{datarecived}} </h2>
+<h2> {{datarecived1}} </h2>
+
+<!-- <app-child1 [datafromparent]="strdata"  ></app-child1> -->
+<hr>
+<div style="background-color: aqua;">
+<app-child1 [ParentArrObj]="arrobj"  ></app-child1>
+</div>
+<hr>
+<!-- <app-child2 (DataFromChild)="datarecived=$event"></app-child2> -->
+
+<app-child2 (DataFromChild)="onCustomEvent($event)"></app-child2>
