@@ -1,0 +1,44 @@
+<p>myhttp works!</p>
+
+<div>
+    <label for="">Title: &nbsp;&nbsp;</label> <input #mytitle type="text" placeholder="Enter the Title..."><br><br>
+    <label for="">Body: &nbsp;&nbsp;</label> <input #mybody type="text" placeholder="Enter the Body..."><br><br>
+    <button (click)="onSubmit(mytitle,mybody)">Submit</button>
+
+
+</div>
+<br><br>
+<div [hidden]="ishidden">
+
+    <label for="">ID: &nbsp;&nbsp;</label> 
+    <input type="text" placeholder="Enter the ID"  [(ngModel)]="id" readonly><br><br>
+    <label for="">Title: &nbsp;&nbsp;</label> 
+    <input type="text" placeholder="Enter the Title" [(ngModel)]="title"><br><br>
+    <label for="">Body: &nbsp;&nbsp;</label> 
+    <input type="text" placeholder="Enter the Body" [(ngModel)]="body"><br><br>
+    <button (click)="OnFinalUpdate()">Final Update</button>
+
+
+</div>
+
+<br><br>
+
+<table border="1px">
+    <thead>
+        <th>ID</th>
+        <th>Action</th>
+        <th>Title</th>
+        <th>Body</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of posts">
+            <td> {{item.id}} </td>
+            <td> <button (click)="OnUpdate(item)">Update</button>
+            <button (click)="onDelete(item.id)">Delete</button>
+            </td>
+            <td> {{item.title}} </td>
+            <td> {{item.body}} </td>
+
+        </tr>
+    </tbody>
+</table>
