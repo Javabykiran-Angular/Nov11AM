@@ -1,0 +1,24 @@
+import { Component, Input, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-update-employee',
+  templateUrl: './update-employee.component.html',
+  styleUrls: ['./update-employee.component.css']
+})
+export class UpdateEmployeeComponent implements OnInit {
+
+  @Input() parentdata={};
+  issubmitDissabled:boolean=true;
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+  onupdate(){
+    this.issubmitDissabled=false;
+
+  }
+
+
+}
